@@ -14,8 +14,11 @@ def hello_world(request, new_=None) :
         new_hello_world.text = temp
         new_hello_world.save()
 
+        hello_world_list = HelloWorld.objects.all()
+
         return render(request, 'accountapp/hello_world.html',
-                      context={'hello_world_output': new_hello_world})
+                      context={'hello_world_list': hello_world_list})
     else:
+        hello_world_list = HelloWorld.objects.all()
         return render(request, 'accountapp/hello_world.html',
-                      context={'text': 'Get METHOD!'})
+                      context={'hello_world_list': hello_world_list})
