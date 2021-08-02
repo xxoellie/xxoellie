@@ -11,3 +11,4 @@ class Profile(models.Model):
     nickname = models.CharField(max_length=30, unique=True)
     message = models.CharField(max_length=200, null=True)
 
+
