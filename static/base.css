@@ -1,5 +1,5 @@
 .pragmatic_header_logo {
-    margin: 2rem 0;
+    margin: 2rem ;
     font-family: 'Rock Salt', cursive;
 }
 
@@ -26,6 +26,18 @@
     height : 12rem;
     border-radius: 20rem;
     object-fit: cover;
+}
+
+.article_image {
+    width : 70%;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem grey;
+}
+
+.article_content {
+    font-size : 1.1rem;
+    text-align: left;
+    margin : 2rem 0;
 }
 
 .NNS_B {
